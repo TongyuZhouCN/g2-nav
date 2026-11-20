@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>G2导航</title>
-    <script type="module" crossorigin src="./assets/index-DOn43kQH.js"></script>
+    <script type="module" crossorigin src="./assets/index-CuYcpgCa.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D4b6VJNo.css">
   </head>
   <body>
     <div id="app">
       <header class="topbar">
         <div>
-          <h1>G2导航 <span id="build-stamp" class="stamp">b8</span></h1>
+          <h1>G2导航 <span id="build-stamp" class="stamp">b9</span></h1>
           <p id="bridge-status" class="sub">正在检测眼镜连接…</p>
         </div>
         <div id="gps-pill" class="pill pill-wait">定位：等待中</div>
@@ -54,6 +54,7 @@
       <section class="card">
         <div class="label">眼镜预览 <span class="hint-inline">（眼镜上看到的就是这个画面）</span></div>
         <canvas id="preview" width="576" height="288"></canvas>
+        <button id="view-btn" type="button" class="secondary">切换到大地图</button>
         <div id="nav-readout" class="readout">未开始导航</div>
       </section>
 
@@ -64,7 +65,7 @@
       </section>
 
       <footer>
-        地图数据 © OpenStreetMap 贡献者，地图瓦片 © CARTO；路线由 OSRM 演示服务提供。
+        地图数据 © OpenStreetMap 贡献者，底图瓦片 © 高德；路线由 OSRM 演示服务提供。
         本应用为个人开发测试版，演示服务有用量限制，请勿依赖其做唯一导航依据。
       </footer>
     </div>
