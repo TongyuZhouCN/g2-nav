@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>G2导航</title>
-    <script type="module" crossorigin src="./assets/index--I7F9JvI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CpL98SdB.css">
+    <script type="module" crossorigin src="./assets/index-DK_BI771.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D8WpifJQ.css">
   </head>
   <body>
     <div id="app">
       <header class="topbar">
         <div>
-          <h1>G2导航 <span id="build-stamp" class="stamp">b26</span></h1>
+          <h1>G2导航 <span id="build-stamp" class="stamp">b27</span></h1>
           <p id="bridge-status" class="sub">正在检测眼镜连接…</p>
         </div>
         <div id="gps-pill" class="pill pill-wait">定位：等待中</div>
@@ -21,10 +21,15 @@
         <label class="label" for="dest-input">目的地</label>
         <div class="search-row">
           <input id="dest-input" type="text" placeholder="输入地点，例如：宁波火车站" autocomplete="off" />
+          <button id="voice-input-btn" type="button" class="mic" title="语音输入目的地">语音</button>
           <button id="search-btn" type="button">搜索</button>
         </div>
         <ul id="search-results" class="results"></ul>
         <p id="dest-chosen" class="chosen" hidden></p>
+        <div id="recents" class="recents" hidden>
+          <div class="label">最近去过</div>
+          <div id="recents-list" class="chips"></div>
+        </div>
       </section>
 
       <section class="card">
